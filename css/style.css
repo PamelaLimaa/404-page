@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --black: #000000;
+    --lilas: #6265e9;
+    --white: #fff;
+    --font-Inconsolata: 'Inconsolata', monospace;
+    --font-SpaceMono: 'Space Mono', monospace;
+}
+
+body{
+    background-color: #6265e9;
+}
+
+.container-header{
+    margin: 4%;
+    font-size: 14px;
+    color: var(--white);
+
+    font-family: var(--font-Inconsolata);
+    font-weight: 700;
+
+}
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin: 0 auto;
+    max-width: 600px;
+
+}
+.img-responsive{
+   
+    margin: 1rem auto;
+    width: 80%;
+}
+
+.text{
+    margin: 1rem;
+    color: var(--white);
+    font-family: var(--font-SpaceMono);
+    font-weight: 400;
+}
+
+.text p {
+    margin: 1.3rem  auto;
+}
+    
+
+.button-homepage{
+    background-color: var(--black);
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    text-align: center;
+    border-radius: 10px;
+}
+
+.button-homepage a{
+    text-decoration: none;
+    color: var(--white);
+    font-family: var(--font-SpaceMono);
+    font-weight: 500;
+    
+}
+
+@media screen and (min-width: 768px){
+    .img-responsive{
+   
+        margin: 1rem auto;
+        width: 50%;
+    }
+
+    .text{
+        margin: 1rem;
+        font-size: 18px;
+    }
+    
+    .text p {
+        margin: 1.3rem auto;
+        font-size: 15px;
+    }
+
+    .button-homepage{
+        width: 40%;
+        margin: 0 auto;
+        padding: 1rem;
+    
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+    .button-homepage a{
+        text-decoration: none;
+        
+    }
+        
+}
+
+@media screen and (min-width:1024px){
+    .container-header{
+        font-size: 18px;
+    
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+        
+    
+    }
+    .img-responsive{
+        width: 90%;
+    }
+
+    .text{
+        margin-left: 1rem;
+        font-size: 18px;
+    }
+    
+    .text p {
+        margin: 2rem auto;
+        font-size: 20px;
+    }
+
+    .button-homepage{
+        margin: 6rem auto;
+        width: 40%;
+        padding: 1rem;
+    
+        text-align: center;
+        border-radius: 10px;
+    }
+
+}
