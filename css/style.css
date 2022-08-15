@@ -48,9 +48,13 @@ section{
 .text p {
     margin: 1.3rem  auto;
 }
-    
+a{
+    display: flex;
+    justify-content: center;
+}
 
 .button-homepage{
+    text-decoration: none;
     background-color: var(--black);
     width: 50%;
     margin: 0 auto;
@@ -58,14 +62,9 @@ section{
 
     text-align: center;
     border-radius: 10px;
-}
-
-.button-homepage a{
-    text-decoration: none;
     color: var(--white);
     font-family: var(--font-SpaceMono);
     font-weight: 500;
-    
 }
 
 @media screen and (min-width: 768px){
@@ -86,7 +85,7 @@ section{
     }
 
     .button-homepage{
-        width: 40%;
+        width: 50%;
         margin: 0 auto;
         padding: 1rem;
     
@@ -128,10 +127,10 @@ section{
 
     .button-homepage{
         margin: 6rem auto;
-        width: 40%;
+        width: 80%;
         padding: 1rem;
     
-        text-align: center;
+       
         border-radius: 10px;
     }
 }
